@@ -4,12 +4,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Symfony2 OptionsResolver Component
 Name:		php-symfony2-OptionsResolver
-Version:	2.1.4
+Version:	2.1.6
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	81cba212fe47c64093090bdbb1f33877
+# Source0-md5:	93cdaf336c436367b56bcd72e5aef1ad
 URL:		http://pear.symfony.com/package/OptionsResolver/
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
