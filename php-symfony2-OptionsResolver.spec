@@ -8,7 +8,7 @@ Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	93cdaf336c436367b56bcd72e5aef1ad
+# Source0-md5:	63e2e9b204f456bb065fd68d3d3860ce
 URL:		http://pear.symfony.com/package/OptionsResolver/
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
