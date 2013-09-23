@@ -1,10 +1,9 @@
-%define		status		stable
 %define		pearname	OptionsResolver
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
-Summary:	%{pearname} - Symfony2 OptionsResolver Component
+Summary:	Symfony2 OptionsResolver Component
 Name:		php-symfony2-OptionsResolver
-Version:	2.1.6
+Version:	2.3.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
@@ -22,21 +21,19 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Symfony2 OptionsResolver Component
-
-In PEAR status of this package is: %{status}.
+The OptionsResolver Component helps you configure objects with option
+arrays. It supports default values, option constraints and lazy
+options.
 
 %prep
 %pear_package_setup
 
 # no packaging of tests
-rm -r .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests .
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist .
 
 # fixups
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/.gitattributes
 mv docs/%{pearname}/Symfony/Component/%{pearname}/* .
-
 
 %install
 rm -rf $RPM_BUILD_ROOT
