@@ -3,18 +3,19 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 OptionsResolver Component
 Name:		php-symfony2-OptionsResolver
-Version:	2.3.4
+Version:	2.4.3
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	63e2e9b204f456bb065fd68d3d3860ce
-URL:		http://pear.symfony.com/package/OptionsResolver/
+# Source0-md5:	51344e72a58d87b3377490c624ff9db0
+URL:		http://symfony.com/doc/2.4/components/options_resolver.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
+Requires:	php(spl)
 Requires:	php-channel(pear.symfony.com)
 Requires:	php-pear >= 4:1.3.10
 BuildArch:	noarch
