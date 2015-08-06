@@ -1,15 +1,15 @@
-%define		pearname	OptionsResolver
-%define		php_min_version 5.3.3
+%define		package	OptionsResolver
+%define		php_min_version 5.3.9
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 OptionsResolver Component
 Name:		php-symfony2-OptionsResolver
-Version:	2.4.8
+Version:	2.7.3
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
-Source0:	https://github.com/symfony/%{pearname}/archive/v%{version}/%{pearname}-%{version}.tar.gz
-# Source0-md5:	febb4e8e4027a14cd80e91cccf8338a6
-URL:		http://symfony.com/doc/2.4/components/options_resolver.html
+Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
+# Source0-md5:	e0f574adf15ff29e305917ec01147183
+URL:		http://symfony.com/doc/2.7/components/options_resolver.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
@@ -25,16 +25,16 @@ arrays. It supports default values, option constraints and lazy
 options.
 
 %prep
-%setup -q -n %{pearname}-%{version}
+%setup -q -n %{package}-%{version}
 
 %build
 phpab -n -e '*/Tests/*' -o autoloader.php .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}
-cp -a *.php */ $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}
-rm -r $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}
+cp -a *.php */ $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}
+rm -r $RPM_BUILD_ROOT%{php_pear_dir}/Symfony/Component/%{package}/Tests
 
 %clean
 rm -rf $RPM_BUILD_ROOT
