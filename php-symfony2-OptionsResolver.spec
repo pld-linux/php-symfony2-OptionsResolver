@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 OptionsResolver Component
 Name:		php-symfony2-OptionsResolver
-Version:	2.7.3
+Version:	2.7.5
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	e0f574adf15ff29e305917ec01147183
+# Source0-md5:	c12ff8b67c2af6579f4fd2e43fee9d58
 URL:		http://symfony.com/doc/2.7/components/options_resolver.html
 BuildRequires:	phpab
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -25,7 +25,7 @@ arrays. It supports default values, option constraints and lazy
 options.
 
 %prep
-%setup -q -n %{package}-%{version}
+%setup -q -n options-resolver-%{version}
 
 %build
 phpab -n -e '*/Tests/*' -o autoloader.php .
