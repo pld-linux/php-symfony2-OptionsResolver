@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 OptionsResolver Component
 Name:		php-symfony2-OptionsResolver
-Version:	2.7.7
+Version:	2.7.8
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	5ae72f5550eae2761eed1642adc29dc3
+# Source0-md5:	fe3141d5a50a7e301bcca0e81296ad5a
 URL:		http://symfony.com/doc/2.7/components/options_resolver.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
