@@ -2,12 +2,12 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 OptionsResolver Component
 Name:		php-symfony2-OptionsResolver
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	fe3141d5a50a7e301bcca0e81296ad5a
+# Source0-md5:	fd95e86294744a4d85321532a3b2d6ac
 URL:		http://symfony.com/doc/2.7/components/options_resolver.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
